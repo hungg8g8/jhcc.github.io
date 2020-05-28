@@ -1436,7 +1436,25 @@ input, select, textarea {
 	p, ul, ol, dl, table, blockquote, form {
 		margin-bottom: 2em;
 	}
+/* unvisited link */
+    a:link {
+      color: black;
+    }
 
+    /* visited link */
+    a:visited {
+      color: black;
+    }
+
+    /* mouse over link */
+    a:hover {
+      color: hotpink;
+    }
+
+    /* selected link */
+    a:active {
+      color: blue;
+    }
 /* Table */
 
 	table {
@@ -1543,6 +1561,20 @@ input, select, textarea {
 			}
 
 		}
+/* Video */
+    .video-container {
+      position: relative;
+      overflow: hidden;
+      height: 0;
+      padding-bottom: 56.25%; /* calculate by aspect ratio (h / w * 100%) */
+    }
+    .video-container .fit {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 
 /* Image */
 
