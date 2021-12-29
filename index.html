@@ -6,546 +6,308 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Johnson Hung</title>
-        <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
-        
-        <!-- Game -->
-        <div id="game" class="container">
-            <div class="row justify-content-center">
-                <canvas id="gameDisplay"></canvas>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="#page-top">
+                    <img class="navbar-logo" src="images/logo_2.png" alt="" />
+                    johnson-hung
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#artworks">Artworks</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </nav>
+        <!-- Header-->
+        <!-- <header class="bg-dark text-white">
+            <div class="container px-4 text-center menu">
+                <p class="lead">Hi, I'm Johnson, nice to meet you :-)</p>
+            </div>
+        </header> -->
+        <!-- About section-->
+        <section class="bg-dark text-white" id="about">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        -<a href="https://drive.google.com/file/d/1onakZ0uhyZRII9sYHPTSW4XrNf6-RXAj/view?usp=sharing">Resume</a>
+                        -<a href="https://www.linkedin.com/in/johnson-hung/">LinkedIn</a>
+                        -<a href="https://github.com/johnson-hung">GitHub</a>
+                        <br><br>
+                        <h3>About</h3>
+                        Hi, I'm Johnson, an international student at <a href="https://www.tamu.edu/">Texas A&M University</a>, and 
+                        I'm actively looking for the following things:
+                        <ul>
+                            <li>Food,</li>
+                            <li>Drinks,</li>
+                            <li>and a full-time SWE job :-)</li>
+                        </ul>
 
-        <!-- Content -->
-        <div id="content">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-                <div class="container-fluid flex-row-reverse">
-                    <!-- <a class="navbar-brand" href="#page-top">Johnson Hung</a> -->
-                    <button class="navbar-toggler text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center text-center" id="navbarResponsive">
-                        <ul class="navbar-nav">
-                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#home">Home</a></li>
-                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#project">Projects</a></li>
-                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#artwork">Artworks</a></li>
-                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <h4>Education</h4>
+                        <ul>
+                            <li><a href="https://www.tamu.edu/">Texas A&M University</a>, College Station, TX <span class="duration">[Aug. 2021 – Present]</span>
+                                <ul>
+                                    <li><a href="https://engineering.tamu.edu/cse/academics/degrees/graduate/mcs.html">Master of Computer Science</a></li>
+                                    <li><a href="https://catalog.tamu.edu/graduate/course-descriptions/csce/">Courses</a>: Software Engineering (CSCE606); <a href="https://github.com/johnson-hung/vanilla-os">Operating Systems (CSCE 611)</a>; Cybersecurity Law & Policy (CSCE 702)</li>
+                                </ul>
+                            </li>
+                            <li><a href="https://www.ntu.edu.tw/english/">National Taiwan University</a>, Taipei, Taiwan <span class="duration">[Sep. 2017 – Jun. 2021]</span>
+                                <ul>
+                                    <li><a href="http://www.as.ntu.edu.tw/index.php/eng">Bachelor of Science in Atmospheric Science</a></li>
+                                    <li>Courses: Data Structure; Algorithms (offered by Princeton University on <a href="https://www.coursera.org/learn/algorithms-part1">Coursera</a>);
+                                        Discrete Mathematics; Machine Learning Foundations; Machine Learning Techniques; Computer
+                                        Networks and Applications; C/C++ Programming; Game Programming</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4>Experience</h4>
+                        <ul>
+                            <li><a href="https://about.facebook.com/meta/">Meta</a> (formerly Facebook), Menlo Park, CA <span class="duration">[May 2022 - Aug. 2022]</span></li>
+                            <li>...</li>
+                        </ul>
+                        <h4>Technologies and Tools</h4>
+                        <ul>
+                            <li>C/C++, C#, Java, Python, HTML, CSS, JavaScript, Ruby</li>
+                            <li>SDL2, POSIX Threads, OpenSSL, Rails, React, Redux, NodeJS, Express, MongoDB, Mongoose, Passport</li>
+                            <li>Git, Unity, Blender, Heroku, AWS</li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-            <!-- Masthead-->
-            <header class="masthead text-white text-center" id="home">
-                <div class="container-fluid d-flex flex-column align-items-center">
-                    <!-- Masthead Avatar Image-->
-                    <img class="masthead-avatar mb-5" id="avatar" src="assets/img/avatar.svg" alt="..." />
-                    <!-- Masthead Heading-->
-                    <h1 class="masthead-heading mb-0">Johnson Hung</h1>
-                    <!-- Icon Divider-->
-                    <!-- <div class="divider-custom divider-light">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                        <div class="divider-custom-line"></div>
-                    </div> -->
-                    <!-- Masthead Subheading-->
-                    <p class="masthead-subheading mb-0">Software Engineer</p>
+            </div>
+        </section>
+        <!-- Projects section-->
+        <section class="bg-dark text-white" id="projects">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <h3>Projects</h3>
+                        </div>
+                        <!-- proj_1 -->
+                        <div class="card bg-gray mb-3 w-100">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img class="card-img" src="images/proj_raycasting.png" alt="Suresh Dasari Card">
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Naive Raycasting</h5>
+                                        <p class="card-text">
+                                            <code>C/C++</code>  <span class="duration">[Dec. 2021 - Present]</span>
+                                            <br>
+                                            A game prototype that showcases the concept of raycasting and integration of <a href="https://github.com/libsdl-org/SDL">SDL2</a> library.
+                                            <br>
+                                            -<a href="https://youtu.be/ISGBiUehNXw">demo</a> 
+                                            -<a href="https://github.com/johnson-hung/naive-raycasting">repo</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- proj_2 -->
+                        <div class="card bg-gray mb-3 w-100">
+                            <div class="row h-50">
+                                <div class="col-sm-3">
+                                    <img class="card-img" src="images/proj_esurvey.png" alt="Suresh Dasari Card">
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">E-Survey</h5>
+                                        <code>JavaScript</code> <span class="duration">[Dec. 2021]</span>
+                                        <br>
+                                        <p class="card-text">
+                                            A website that provides service of feedback collection through email surveys.
+                                        <br>
+                                            -<a href="https://github.com/johnson-hung/esurvey-server">repo</a> 
+                                            -<a href="https://protected-caverns-57595.herokuapp.com/">website</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- proj_3 -->
+                        <div class="card bg-gray mb-3 w-100">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img class="card-img" src="images/proj_casa.png" alt="Suresh Dasari Card">
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Computer-Architecture Long-term Mentoring (CALM) Website</h5>
+                                        <code>Ruby</code> <span class="duration">[Oct. 2021 - Dec. 2021]</span>
+                                        <br>
+                                        <p class="card-text">
+                                            The program website from the Computer Architecture Student Association (<a href="https://www.sigarch.org/casa/">CASA</a>).
+                                        <br>
+                                            -<a href="https://github.com/johnson-hung/casa">repo</a> 
+                                            -<a href="https://stormy-refuge-76501.herokuapp.com/announcements">website</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- proj_4 -->
+                        <div class="card bg-gray mb-3 w-100">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img class="card-img" src="images/proj_newproject.png" alt="Suresh Dasari Card">
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">New Project</h5>
+                                        <code>C#</code> <span class="duration">[Feb. 2020 – Mar. 2020]</span>
+                                        <br>
+                                        <p class="card-text">
+                                            A multiplayer game that supports 20 concurrent users and 500 msg/sec per room with <a href="https://www.photonengine.com/">Photon</a> Cloud service.
+                                        <br>
+                                            -<a href="https://youtu.be/CKx3u-9TNCU">demo</a> 
+                                            -<a href="https://drive.google.com/open?id=1AnxoNULk3oBszD9QbB2GhX_WKxsAi8qB">download</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- proj_5 -->
+                        <div class="card bg-gray mb-3 w-100">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img class="card-img" src="images/proj_micropayment.png" alt="Suresh Dasari Card">
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Secure Person2Person Micropayment System</h5>
+                                        <code>C/C++</code> <span class="duration">[Nov. 2019 – Dec. 2019]</span>
+                                        <br>
+                                        <p class="card-text">
+                                            A system that provides multithreaded server to handle user data and encrypted messages of micropayment transactions.
+                                        <br>
+                                            -<a href="https://github.com/johnson-hung/micropayment-system">repo</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- proj_6 -->
+                        <div class="card bg-gray mb-3 w-100">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img class="card-img" src="images/proj_savesheep.png" alt="Suresh Dasari Card">
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Save Sheep!</h5>
+                                        <code>C#</code> <span class="duration">[Aug. 2019 – Sep. 2019]</span>
+                                        <br>
+                                        <p class="card-text">
+                                            A mobile puzzle game that features AI with <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* search algorithm</a> and in-game map editor (1000+ downloads on GooglePlay).
+                                        <br>
+                                            -<a href="https://youtu.be/KgRwGpgLYB4">demo</a> 
+                                            -<a href="https://play.google.com/store/apps/details?id=com.jhcc.game.save">download</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </header>
-            <!-- About Section-->
-            <section class="page-section text-white mb-0" id="about">
-                <div class="container d-flex flex-column align-items-evenly">
-                    <h2 class="page-section-heading text-center text-white mb-5">Skills</h2>
-                    <div class="mb-5" id="skill">
-                        <ul class="lead row text-center">
-                            <li class="col-6 col-sm-3 mb-1">C/C++</li>
-                            <li class="col-6 col-sm-3 mb-1">Java</li>
-                            <li class="col-6 col-sm-3 mb-1">Python</li>
-                            <li class="col-6 col-sm-3 mb-1">JavaScript</li>
-                            <li class="col-6 col-sm-3 mb-1">HTML</li>
-                            <li class="col-6 col-sm-3 mb-1">CSS</li>
-                            <li class="col-6 col-sm-3 mb-1">Unity</li>
-                            <li class="col-6 col-sm-3 mb-1">Blender</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- About Section Heading-->
-                    <h2 class="page-section-heading text-center text-white mb-5">Education</h2>
-                    <!-- Icon Divider-->
-                    <!-- <div class="divider-custom divider-light">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                        <div class="divider-custom-line"></div>
-                    </div> -->
-                    <!-- About Section Content-->
-                    <div class="row justify-content-center">
-                        <div class="col-sm-4 mb-3 logo text-center">
-                            <a class="logo-link" href="https://www.ntu.edu.tw/english/" title="Website"><img class="img-fluid logo-img logo-img-circle" src="assets/img/National_Taiwan_University_logo.svg" alt="..."></a>
+            </div>
+        </section>
+        <!-- Artworks section-->
+        <section class="bg-dark text-white" id="artworks">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h3>Artworks</h3>
+                        <!--Carousel Wrapper-->
+                        <div id="carousel-1" class="carousel slide carousel-fade mb-5" data-ride="carousel">
+                            <!--Indicators-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-1" data-slide-to="1"></li>
+                                <li data-target="#carousel-1" data-slide-to="2"></li>
+                                <li data-target="#carousel-1" data-slide-to="3"></li>
+                                <li data-target="#carousel-1" data-slide-to="4"></li>
+                                <li data-target="#carousel-1" data-slide-to="5"></li>
+                                <li data-target="#carousel-1" data-slide-to="6"></li>
+                                <li data-target="#carousel-1" data-slide-to="7"></li>
+                            </ol>
+                            <!--/.Indicators-->
+                            <!--Slides-->
+                            <div class="carousel-inner" role="listbox" style=" width:100%; height: auto !important;">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="images/art_model_0.png" alt="slide_0">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/art_model_1.png" alt="slide_1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/art_model_2.png" alt="slide_2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/art_squidgame.png" alt="slide_3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/art_anime.png" alt="slide_4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/art_pickaxe.png" alt="slide_5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/art_sheep.png" alt="slide_6">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/art_badsituation.png" alt="slide_7">
+                                </div>
+                            </div>
+                            <!--/.Slides-->
+                            <!--Controls-->
+                            <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                            <!--/.Controls-->
                         </div>
-                        <div class="col-sm-6 mb-3 align-self-center">
-                            <p class="lead logo-context">
-                                <span class="school-title">National Taiwan University</span> <br>
-                                Taipei, Taiwan<br>
-                                Fall 2017 - June 2021<br>
-                                B.S. in Atmospheric Science<br>
-                            </p>
-                        </div>
-                        
-                        <div class="col-sm-4 mb-3 logo text-center">
-                            <a class="logo-link" href="https://www.tamu.edu/" title="Website"><img class="img-fluid logo-img logo-img-box" src="assets/img/TAMU-Logo.svg" alt="...""></div></a>
-                        <div class="col-sm-6 mb-3 align-self-center">
-                            <p class="lead logo-context">
-                                <span class="school-title">Texas A&M University</span> <br>
-                                College Station, Texas<br>
-                                Fall 2021 - present<br>
-                                Master of Computer Science<br>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- About Section Button-->
-                    <div class="text-center mt-5">
-                        <a class="btn btn-lg btn-outline-light" href="https://drive.google.com/file/d/1onakZ0uhyZRII9sYHPTSW4XrNf6-RXAj/view?usp=sharing">
-                            <i class="fas fa-download"></i>
-                            Resume
-                        </a>
+                        <!--/.Carousel Wrapper-->
                     </div>
                 </div>
-            </section>
-            <!-- Portfolio Section-->
-            <section class="page-section portfolio" id="project">
-                <div class="container d-flex flex-column align-items-center">
-                    <!-- Portfolio Section Heading-->
-                    <h2 class="page-section-heading text-center text-white mb-5">Projects</h2>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </section>
+        <!-- Footer-->
+        <footer class="py-4 bg-black">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Johnson Hung</p></div>
+        </footer>
 
-                    <!-- Portfolio Grid Items-->
-                    <div class="row justify-content-evenly">
-                        <!-- Portfolio Item 1-->
-                        <div class="col-sm-6">
-                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/preview_project_1.png" alt="..." />
-                            </div>
-                        </div>
-                        <!-- Portfolio Item 2-->
-                        <div class="col-sm-6">
-                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/preview_project_2.png" alt="..." />
-                            </div>
-                        </div>
-                        <!-- Portfolio Item 3-->
-                        <div class="col-sm-6">
-                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/preview_project_3.png" alt="..." />
-                            </div>
-                        </div>
-                        <!-- Portfolio Item 4-->
-                        <div class="col-sm-6 mb-lg-0">
-                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/preview_project_4.png" alt="..." />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Artwork Section -->
-            <section class="page-section portfolio" id="artwork">
-                <div class="container d-flex flex-column">
-                    <h2 class="page-section-heading text-center text-white mt-5 mb-5">Artworks</h2>
-                    <div class="row justify-content-center">
-                        <!-- Portfolio Item 1-->
-                        <div class="col-sm-6">
-                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/preview_art_1.png" alt="..." />
-                            </div>
-                        </div>
-                        <!-- Portfolio Item 2-->
-                        <div class="col-sm-6">
-                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/preview_art_2.png" alt="..." />
-                            </div>
-                        </div>
-                        <!-- Portfolio Item 3-->
-                        <div class="col-sm-6">
-                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
-                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/preview_art_3.png" alt="..." />
-                            </div>
-                        </div>
-                        <!-- Portfolio Item 4-->
-                        <div class="col-sm-6 mb-lg-0">
-                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal8">
-                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/preview_art_4.png" alt="..." />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Contact Section-->
-            <section class="page-section text-white" id="contact">
-                <div class="container align-items-center">
-                    <!-- Contact Section Heading-->
-                    <h2 class="page-section-heading text-center mb-5">Contact</h2>
-                    <!-- Icon Divider-->
-                    <!-- <div class="divider-custom">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                        <div class="divider-custom-line"></div>
-                    </div> -->
-                    <!-- Contact Section Form-->
-                    <div class="row justify-content-center p-1 pt-0">
-                        <div class="col-10 col-sm-8">
-                            <form id="contactForm">
-                                <div class="form-floating">
-                                    <input class="form-control" id="inputName" type="text" placeholder="Enter your name..." />
-                                    <label for="inputName">Name</label>
-                                </div>
-                                <div class="form-floating">
-                                    <input class="form-control" id="inputEmail" type="email" placeholder="Enter your email..." />
-                                    <label for="inputEmail">Email address</label>
-                                </div>
-                                <div class="form-floating">
-                                    <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number..." />
-                                    <label for="inputPhone">Phone Number</label>
-                                </div>
-                                <div class="form-floating">
-                                    <textarea class="form-control" id="inputMessage" placeholder="Enter your message here..." style="height: 12rem"></textarea>
-                                    <label for="inputMessage">Message</label>
-                                </div>
-                                <div class="pt-3 pb-3 d-flex justify-content-center">
-                                    <button class="btn btn-outline-light btn-social" type="submit">
-                                      <i class="fas fa-envelope"></i>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Footer-->
-            <footer class="footer text-center">
-                <div class="container">
-                    <div class="row">
-                        <!-- Footer Location-->
-                        <!-- <div class="col-lg-4 mb-5 mb-lg-0">
-                            <h4 class=" mb-4">Location</h4>
-                            <p class="lead mb-0">
-                                2215 John Daniel Drive
-                                <br />
-                                Clark, MO 65243
-                            </p>
-                        </div> -->
-                        <!-- Footer Social Icons-->
-                        <div class="col mb-5 mb-lg-0">
-                            <h4 class="mb-4">Socials</h4>
-                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/johnson-hung-154b61211"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/jhcc.gamedev"><i class="fab fa-fw fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/__ccjh__/"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!-- Copyright Section-->
-            <div class="copyright py-4 text-center text-white">
-                <div class="container"><small>Copyright &copy; Johnson Hung</small></div>
-            </div>
-
-
-
-            <!-- Portfolio Modals-->
-            <!-- Portfolio Modal 1-->
-            <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">
-                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-fw"></i></button>
-                        </div>
-                        <div class="modal-body text-center pb-5">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title mb-3">Portfolio Website</h2>
-                                        <h5 class="portfolio-modal-sub">Personal, 6/2021<br>Website</h4>
-                                        
-                                        <!-- Portfolio Modal - Image-->
-                                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/preview_project_1.png" alt="..." />
-                                        <!-- Portfolio Modal - Text-->
-                                        <p class="lead mb-4">
-                                            - Clean & User-friendly<br>
-                                            - Interactive HTML5 game
-                                        </p>
-                                        <a class="btn btn-lg btn-outline-light" href="https://johnson-hung.github.io/portfolio/">
-                                            Check it out!
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Portfolio Modal 2-->
-            <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">
-                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-fw"></i></button>
-                        </div>
-                        <div class="modal-body text-center pb-5">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title mb-3">BALL SHOOOT</h2>
-                                        <h5 class="portfolio-modal-sub">Team, 10-12/2018<br>Multiplayer game, PC</h4>
-                                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/preview_project_2.png" alt="..." />
-                                        <p class="lead mb-4">
-                                            A game that leverages LAN connections based on UNET, and features a basic matchmaking
-                                            system, a playground that allows hosts to spawn prefabs and respawn points, and NPC with
-                                            functions based on a finite-state machine.<br><br>
-                                        </p>
-                                        <div class="row">
-                                            <a class="col-5 btn btn-lg btn-outline-light mx-auto" href="https://youtu.be/ORvvmM53PtA">
-                                                Gamplay Video
-                                            </a>
-                                            <a class="col-5 btn btn-lg btn-outline-light mx-auto" href="https://drive.google.com/open?id=1cdZXdSFl6ecj2ayj6xXnlu653WFtzOcd">
-                                                <i class="fas fa-download"></i>
-                                                Download
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Portfolio Modal 3-->
-            <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">
-                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-fw"></i></button>
-                        </div>
-                        <div class="modal-body text-center pb-5">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title mb-3">SAVE</h2>
-                                        <h5 class="portfolio-modal-sub">Personal, 8/2019<br>Puzzle game, Mobile</h4>
-                                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/preview_project_3.png" alt="..." />
-                                        <p class="lead mb-4">
-                                            A puzzle game featuring grid-based interactions and movable obstacles, level editor for 
-                                            creating and loading level by numbers, and NPC with A-star algorithm, which combines the 
-                                            concepts of Dijkstra algorithm and greedy best-first search.<br><br>
-                                        </p>
-                                        <div class="row">
-                                            <a class="col-5 btn btn-lg btn-outline-light mx-auto" href="https://youtu.be/KgRwGpgLYB4">
-                                                Gamplay Video
-                                            </a>
-                                            <a class="col-5 btn btn-lg btn-outline-light mx-auto" href="https://play.google.com/store/apps/details?id=com.jhcc.game.save">
-                                                <i class="fas fa-download"></i>
-                                                Download
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Portfolio Modal 4-->
-            <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">
-                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-fw"></i></button>
-                        </div>
-                        <div class="modal-body text-center pb-5">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title mb-3">New Project</h2>
-                                        <h5 class="portfolio-modal-sub">Personal, 2/2020<br>Multiplayer game, PC</h4>
-                                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/preview_project_4.png" alt="..." />
-                                        <p class="lead mb-4">
-                                            A multiplayer game with a network system based on Photon PUN2; provides a dedicated 
-                                            server connection for clients, and implements a movement prediction in order to achieve
-                                            smooth synchronization for player movements.
-                                            <br><br>
-                                        </p>
-                                        <div class="row">
-                                            <a class="col-5 btn btn-lg btn-outline-light mx-auto" href="https://youtu.be/CKx3u-9TNCU">
-                                                Gamplay Video
-                                            </a>
-                                            <a class="col-5 btn btn-lg btn-outline-light mx-auto" href="https://drive.google.com/open?id=1AnxoNULk3oBszD9QbB2GhX_WKxsAi8qB">
-                                                <i class="fas fa-download"></i>
-                                                Download
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Portfolio Modal 5-->
-            <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">
-                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-fw"></i></button>
-                        </div>
-                        <div class="modal-body text-center pb-5">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title mb-3">Me</h2>
-                                        <h5 class="portfolio-modal-sub">August, 2019<br>Photoshop</h4>
-                                        
-                                        <!-- Portfolio Modal - Image-->
-                                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Johnson.png" alt="..." />
-                                        <!-- Portfolio Modal - Text-->
-                                        <p class="lead mb-4">
-                                            Yup, it's me with a pickaxe :)
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Portfolio Modal 6-->
-            <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">
-                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-fw"></i></button>
-                        </div>
-                        <div class="modal-body text-center pb-5">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title mb-3">Lamb</h2>
-                                        <h5 class="portfolio-modal-sub">August, 2019<br>Photoshop</h4>
-                                        
-                                        <!-- Portfolio Modal - Image-->
-                                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Lamb.png" alt="..." />
-                                        <!-- Portfolio Modal - Text-->
-                                        <p class="lead mb-4">
-                                            A cute little lamb :D
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Portfolio Modal 7-->
-            <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">
-                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-fw"></i></button>
-                        </div>
-                        <div class="modal-body text-center pb-5">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title mb-3">Bad Situation</h2>
-                                        <h5 class="portfolio-modal-sub">February, 2020<br>Illustrator</h4>
-                                        
-                                        <!-- Portfolio Modal - Image-->
-                                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/BadSituation.png" alt="..." />
-                                        <!-- Portfolio Modal - Text-->
-                                        <p class="lead mb-4">
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Portfolio Modal 8-->
-            <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">
-                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-fw"></i></button>
-                        </div>
-                        <div class="modal-body text-center pb-5">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title mb-3">Little Johnson</h2>
-                                        <h5 class="portfolio-modal-sub">June, 2019<br>Blender</h4>
-                                        
-                                        <!-- Portfolio Modal - Image-->
-                                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/LittleJohnson.png" alt="..." />
-                                        <!-- Portfolio Modal - Text-->
-                                        <p class="lead mb-4">
-                                            It's my first Blender model, I used it for 3D course team final project (held by NTU IM, students were asked to make an one minute animation).
-                                        </p>
-                                        <a class="btn btn-lg btn-outline-light mb-2" href="https://youtu.be/Rq5GW_x9C54">
-                                            See Animation
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Scripts tags -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script src="js/game.js"></script>
+        <!-- Carousel -->
+        <script>
+            $(function(){
+                // Activate Carousel
+                $("#carousel-1").carousel();
+            });
+        </script>
     </body>
 </html>
